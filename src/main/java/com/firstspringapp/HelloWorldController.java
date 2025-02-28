@@ -21,4 +21,10 @@ public class HelloWorldController {
         model.addAttribute("message", "Hello from BridgeLabz");
         return "hello"; // This refers to the Thymeleaf template (hello.html)
     }
+
+    // UC_03
+    @GetMapping("/hello3")
+    public String sayHello3(){
+        return "Hello from BridgeLabz";
+    }
 }
